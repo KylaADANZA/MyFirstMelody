@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
-
+import './index.css';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
@@ -59,11 +59,10 @@ class SignInGoogleBase extends Component {
     const { error } = this.state;
 
     return (
-      <form onSubmit={this.onSubmit}>
-        <button type="submit">Sign In with Google</button>
-
+        <div>
+        <button class='button' type="submit" onClick={this.onSubmit}>Sign In with Google</button>
         {error && <p>{error.message}</p>}
-      </form>
+        </div>
     );
   }
 }
