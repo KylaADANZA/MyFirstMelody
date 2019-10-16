@@ -6,9 +6,11 @@ import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
 const SignInPage = () => (
-  <div>
-    <h1>SignIn</h1>
-    <SignInGoogle />
+  <div id='signInPage'>
+    <div className='heading'>
+      <h1>My First Melody</h1>
+      <SignInGoogle />
+    </div>
   </div>
 );
 
@@ -25,8 +27,10 @@ const ERROR_MSG_ACCOUNT_EXISTS = `
 class SignInGoogleBase extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { error: null };
+      this.state = {
+        error: null,
+        gameNo: 'gameImage1',
+      };
   }
 
   onSubmit = event => {
@@ -55,13 +59,29 @@ class SignInGoogleBase extends Component {
     event.preventDefault();
   };
 
+  showNextImage = () => {
+    if(this.state.gameNo === 'gameImage1') {
+      this.setState({ gameNo: 'gameImage2' });
+    } else if(this.state.gameNo === 'gameImage2') {
+      this.setState({ gameNo: 'gameImage3' });
+    } else {
+      this.setState({ gameNo: 'gameImage1' });
+    }
+  }
+
   render() {
     const { error } = this.state;
 
     return (
         <div>
-        <button class='button' type="submit" onClick={this.onSubmit}>Sign In with Google</button>
-        {error && <p>{error.message}</p>}
+          <button className='signInButton' type="submit" onClick={this.onSubmit}>Sign In</button>
+          {error && <p>{error.message}</p>}
+          <button className='playNow' onClick={this.onSubmit} type="submit">
+            Play Now!
+          </button>
+          <button type="submit" className='leftArrow' onClick={this.showNextImage}/>
+          <button type="submit" className='rightArrow'onClick={this.showNextImage}/>
+          <div className={this.state.gameNo}/>
         </div>
     );
   }
