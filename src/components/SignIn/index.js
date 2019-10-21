@@ -4,14 +4,18 @@ import { compose } from 'recompose';
 import './index.css';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import 'bootstrap/dist/css/bootstrap.css';
+import {Container, Row} from 'react-bootstrap';
 
 const SignInPage = () => (
-  <div id='signInPage'>
+  <Container id='signInPage'>
+  <Row>
     <div className='heading'>
       <h1>My First Melody</h1>
       <SignInGoogle />
-    </div>
-  </div>
+      </div>
+    </Row>
+  </Container>
 );
 
 const ERROR_CODE_ACCOUNT_EXISTS =
