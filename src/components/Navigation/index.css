@@ -10,9 +10,9 @@
 .signInButton,
 .signOutButton,
 .link {
-	background-color: inherit;
+	background-color: rgba(249, 249, 249, 0.9);
 	font-size: 2em;
-	border: none;
+	border: 4px solid black;
 	outline: none;
 	color: black;
 	font-family: unset;
@@ -20,6 +20,7 @@
 	text-decoration: none;
 	font-weight: 600;
 	width: auto;
+  margin: 0.3em;
 }
 .signOutButton:hover,
 .signInButton:hover,
