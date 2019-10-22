@@ -1,0 +1,14 @@
+.gameImage {
+	border-radius: 13px;
+	border-color: ;
+	border: 4px #FF9311;
+	text-align: center;
+    width: 45vw;
+    box-shadow: 5px 10px #FF9311;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+}
+.gameImage:active {
+    transform: scale(0.75);
+  }
