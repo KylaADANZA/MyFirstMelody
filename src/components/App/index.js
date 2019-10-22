@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Navigation from '../Navigation';
 import SignInPage from '../SignIn';
 import HomePage from '../Home';
+import Game1Page from '../Game1';
+import Game2Page from '../Game2';
+import Game3Page from '../Game3';
 
 import * as ROUTES from '../../constants/routes';
 import {AuthUserContext} from '../Session';
@@ -30,6 +33,15 @@ const App = () => (
       </Row>
       <Row>
         <Route path={ROUTES.HOME} component={HomePage} />
+      </Row>
+      <Row>
+        <Route path={ROUTES.GAME1} component={Game1Page} />
+      </Row>
+      <Row>
+        <Route path={ROUTES.GAME2} component={Game2Page} />
+      </Row>
+      <Row>
+        <Route path={ROUTES.GAME3} component={Game3Page} />
       </Row>
     </Container>
   </Router>
