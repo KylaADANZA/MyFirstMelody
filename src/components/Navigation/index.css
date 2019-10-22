@@ -1,0 +1,31 @@
+#Navigation {
+	z-index: 2;
+	background: white;
+}
+#Navigation.container-fluid {
+	padding: 0;
+	margin: 0;
+	background: transparent;
+}
+.signInButton,
+.signOutButton,
+.link {
+	background-color: inherit;
+	font-size: 2em;
+	border: none;
+	outline: none;
+	color: black;
+	font-family: unset;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 600;
+	width: auto;
+}
+.signOutButton:hover,
+.signInButton:hover,
+.signOutButton:focus,
+.signInButton:focus,
+.signOutButton:active,
+.signInButton:active {
+	outline: none;
+}

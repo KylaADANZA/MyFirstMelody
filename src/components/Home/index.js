@@ -1,9 +1,22 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col } from 'react-bootstrap';
+
 const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-  </div>
+	<Container fluid={true} id="signInPage">
+		<Row>
+			<Col></Col>
+			<Col lg="auto" md="auto" sm="auto" className="heading">
+				<h1>Home Page</h1>
+			</Col>
+			<Col></Col>
+		</Row>{' '}
+		<Row className="align-items-center justify-items-center">
+			<Col>
+				<p className="text-center">The Home Page is accessible by every signed in user.</p>
+			</Col>
+		</Row>
+	</Container>
 );
 
 // const condition = authUser => !!authUser;
