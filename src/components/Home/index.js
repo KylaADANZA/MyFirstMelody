@@ -13,7 +13,6 @@ const HomePage = () => (
 		</Row>{' '}
 		<Row className="align-items-center justify-items-center">
 			<Col>
-				<p className="text-center">The Home Page is accessible by every signed in user.</p>
 			</Col>
 		</Row>
 	</Container>
