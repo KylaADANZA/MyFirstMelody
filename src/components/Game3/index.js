@@ -1,6 +1,6 @@
 import React from 'react';
-import * as ROUTES from '../../constants/routes';
-import {Link} from 'react-router-dom';
+//import * as ROUTES from '../../constants/routes';
+//import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
