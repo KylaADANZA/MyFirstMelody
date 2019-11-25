@@ -42,7 +42,7 @@ export class Game3Component extends Component {
             <h2 className="intro"> The aim of this game is to select the correct key signature to the notes displayed on a musical stave, but first we need to learn their names. Click PLAY when you're done.</h2>
           <Row className="align-items-center justify-content-center">
             <Col className="image-container" lg="auto" md="auto" sm="auto" xs="auto">
-              <Image className="noteTutorialImage" src="images/musicNotes.png" />
+              <Image className="noteTutorialImage3" src="images/musicNotes.png" />
             </Col>
           </Row>
           </Row>

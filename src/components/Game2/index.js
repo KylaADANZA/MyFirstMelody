@@ -126,7 +126,7 @@ export class Game2Component extends Component {
   showNextButton = () => {
     if(this.state.gameOn && this.state.cards.length === 6) {
       return (
-        <button className="nextButton" disabled={this.state.isDisabled} onClick={this.openGameV2} type="submit">Next</button>
+        <button className="nextButton2" disabled={this.state.isDisabled} onClick={this.openGameV2} type="submit">Next</button>
       )
     }
   }
@@ -148,7 +148,7 @@ export class Game2Component extends Component {
   showBackButton = () => {
     if(this.state.gameOn) {
       return (
-        <button className={this.state.cards.length === 6 ? "backButton" : "secondBackButton"} type="submit" onClick={this.handleShow}>Back</button>
+        <button className={this.state.cards.length === 6 ? "backButton2" : "secondBackButton"} type="submit" onClick={this.handleShow}>Back</button>
       )
     }
   }
@@ -233,14 +233,14 @@ export class Game2Component extends Component {
       return (
         <Row>
           <Col>
-            <h2 className="intro"> The aim of this game is to match the musical note symbols to their right name, but first we need to learn their names. Click PLAY when you're done. </h2>
+            <h2 className="intro2"> The aim of this game is to match the musical note symbols to their right name, but first we need to learn their names. Click PLAY when you're done. </h2>
           </Col>
           <Row className="align-items-center justify-content-center">
             <Col>
               <Image className="float-left arrow" src="images/leftArrow.png" onClick={this.showTutorial}/>
             </Col>
             <Col className="image-container" lg="auto" md="auto" sm="auto" xs="auto">
-              <Image className="noteTutorialImage" src={this.state.notesImage} />
+              <Image className="noteTutorialImage2" src={this.state.notesImage} />
             </Col>
             <Col>
               <Image className="float-right arrow" onClick={this.showTutorial} src="images/rightArrow.png" />
@@ -249,7 +249,7 @@ export class Game2Component extends Component {
           <Row className="align-items-center">
             <Col></Col>
             <Col lg="auto" md="auto" sm="auto" xs="auto">
-              <button className="playButton" type="submit" onClick={this.openGame2}>
+              <button className="playButton2" type="submit" onClick={this.openGame2}>
                 PLAY
               </button>
             </Col>
@@ -262,7 +262,7 @@ export class Game2Component extends Component {
 				<Row>
         {this.state.cards.map(card => (
 					<Col key={card.id}>
-          	<Image key={card.id} onClick={() => this.findKey(card.id)} className={this.state.cards.length === 6 ? "cardStyle" : "secondCardStyle"} src={this.displaySrcImage(card)} />
+          	<Image key={card.id} onClick={() => this.findKey(card.id)} className={this.state.cards.length === 6 ? "cardStyle2" : "secondCardStyle"} src={this.displaySrcImage(card)} />
 					 </Col>
           )
         )}

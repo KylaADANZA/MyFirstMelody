@@ -8,7 +8,7 @@
   border: #FF9311 10px solid;
 }
 
-.intro{
+.intro2{
   color: black;
   font-size: 2.2em;
   padding-top: 17px;
@@ -31,7 +31,7 @@
   transform: scale(0.75);
 }
 
-.noteTutorialImage {
+.noteTutorialImage2 {
   border-radius: 13px;
   border-color: black;
   border: 4px solid;
@@ -41,7 +41,7 @@
   left: 1.5em;
 }
 
-.playButton {
+.playButton2 {
   margin: 0.5em;
   color: white;
   width: auto;
@@ -60,7 +60,7 @@
   left: 10.5em;
 }
 
-.nextButton {
+.nextButton2 {
   color: #FF9311;
   width: auto;
   font-size: 2.5em;
@@ -78,7 +78,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.nextButton:disabled {
+.nextButton2:disabled {
   color: grey;
   border: grey 10px solid;
 }
@@ -87,7 +87,7 @@
   background-color: pink;
 }
 
-.cardStyle {
+.cardStyle2 {
   height: 17em;
   width: 17em;
   display:block;
@@ -109,7 +109,7 @@
   border: black 10px solid;
 }
 
-.nextButton {
+.nextButton2 {
   color: #FF9311;
   position: relative;
   bottom: 1.8em;
@@ -121,12 +121,12 @@
   font-weight: 700;
 }
 
-.nextButton:disabled {
+.nextButton2:disabled {
   border: #999999 10px solid;
   color: #666666;
 }
 
-.backButton {
+.backButton2 {
   color: #FF9311;
   position: relative;
   bottom: 15.8em;
