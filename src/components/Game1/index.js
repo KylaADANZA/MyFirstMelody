@@ -261,7 +261,7 @@ export class Game1Component extends Component {
       >
         <Modal.Header>
         </Modal.Header>
-        <Modal.Body>Well done on completing Musical Memory! To play another game click Continue. To go back to the tutorial click Tutorial.</Modal.Body>
+        <Modal.Body>Well done on completing Tap Tune! To play another game click Continue. To go back to the tutorial click Tutorial.</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.goToTutorial}>
             Tutorial
